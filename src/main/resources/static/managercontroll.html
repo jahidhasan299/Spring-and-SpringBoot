@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>管理员页面</title>
+    <style type="text/css">
+        .t1{
+            position: absolute;
+            left: 82%;
+             margin-top:-10px;
+             font-size:10px;
+        }
+    </style>
+    <style type="text/css">
+        .p1{
+            position: absolute;
+            left: 70%;
+            margin-left:-10px;
+             margin-top:-10px;
+        }
+    </style>
+<script type="text/javascript">
+function m(){
+	window.location.href = "user.html";
+}
+function r(){
+	window.location.href = "getproblem.html";
+}
+function u(){
+	window.location.href = "updatem.html";
+}
+</script>
+</head>
+<body>
+<p style="font-size:15px" class="p1" id="a"></p>
+<a style="color:blue;font-size:15px" class="t1"  onclick="tc()">退出登录</a>
+<div align="center">
+	<div><h3>欢迎使用系统！</h3></div>
+	 <input type="button" value="信息修改" onclick="u()">
+    <input type="button" value="用户管理" onclick="m()">
+     <input type="button" value="任务管理" onclick="r()">
+</div>
+</body>
+<script type="text/javascript" src="static/js/jquery.3.4.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/login.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	Manager();
+})
+</script>
+</html>

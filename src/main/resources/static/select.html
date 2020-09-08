@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" value="查询所有员工" onclick="getAll()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" placeholder="-----身份证号-----" id="cardid">
+	<input type="button" value="查询员工" onclick="getUserByCardid()">
+	<input type="text" placeholder="----账号----" id="unumber">
+	<input type="button" value="查询" onclick="getUserByNumber1()">
+<div>
+	<table class="table table-bordered">
+		<tr>
+			<th>编号</th>
+			<th>用户名</th>
+			<th>账号</th>
+			<th>身份证号</th>
+			<th>性别</th>
+			<th>薪水</th>
+			<th>状态</th>
+			<th>等级</th>
+			<th>操作</th>
+			<th>操作2</th>
+		</tr>
+	</table>
+</div>
+</body>
+<script type="text/javascript" src="static/js/jquery.3.4.js"></script>
+<script type="text/javascript" src="static/js/index.js"></script>
+<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+</html>

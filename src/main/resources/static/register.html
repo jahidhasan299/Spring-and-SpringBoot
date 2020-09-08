@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+    function fanhui(){
+    	window.location.href="user.html"
+    }
+    </script>
+</head>
+<body>
+<form action="#" method="post" align="center">
+ <p>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名:</label>
+        <input type="text" name="uname">
+    </p>
+    <p>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账号:</label>
+        <input type="text" name="unumber" placeholder="---5到20位英文字母或数字---" onkeyup="getUserByNumber()" onblur="unumbereg()"  />
+        <label style="color:red">&nbsp;</label>
+        <span id="uid"></span>
+    </p>
+    <p>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话:</label>
+        <input type="text" name="uphone">
+    </p>
+     <p>
+        <label>身份证号:</label>
+        <input type="text" name="cardid">
+    </p>
+    <p>
+        <label>性&nbsp;&nbsp;&nbsp;别:</label>
+        <input type="radio" name="sex" value="男" checked="checked"><label for="man">男</label>
+        <input type="radio" name="sex" value="女" ><label for="woman">女</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+        <label>&nbsp;&nbsp;&nbsp;薪&nbsp;&nbsp;&nbsp;水:</label>
+        <input type="text" name="salary">
+    </p>
+    <p>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级别:</label>
+       <select>
+       <option id="ulevel">1</option>
+       <option id="ulevel">2</option>
+       <option id="ulevel">3</option>
+       </select>
+    </p>
+    <p>
+        <input type="button" value="提交" onclick="addUser()">
+        <input type="button" value="返回" onclick="fanhui()">
+    </p>
+</form>
+</body>
+<script type="text/javascript" src="static/js/jquery.3.4.js"></script>
+<script type="text/javascript" src="static/js/register.js"></script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>地铁问题描述</title>
+</head>
+<body>
+<h1>地铁问题描述</h1>
+   <p>
+   <label>姓名</label>
+   <input type="text" name="username">
+  </p>
+  <p>
+   <label>电话</label>
+   <input type="text" name="phone">
+  </p>
+  <p>
+   <label>问题地点</label>
+   <input type="text" name="location">
+  </p>
+  <p>
+   <label>情况说明</label>
+   <input type="text" name="statement">
+  </p>
+  <p>
+   <select>
+   <option>--情况紧急程度---</option>
+   <option id="urgence">紧急</option>
+   <option id="urgence">比较紧急</option>
+   <option id="urgence">小问题</option>
+   </select>
+  </p>
+  <input type="button" value="提交" onclick="addProblem()">
+</body>
+<script type="text/javascript" src="static/js/jquery.3.4.js"></script>
+<script type="text/javascript" src="static/js/problem.js"></script>
+</html>
